@@ -4,7 +4,8 @@
  *
  * Provides four methods to reach the hidden number via guessing as a game:
  * @method{(min: number, max: number) => void} setRange - define the guessing range [min; max]
- * @method{(void) => void} guess - get the mean of current min and max range values and check if that is the hidden number
+ * @method{(void) => void} guess - get the rounded mean of current min and max range values.
+ * @note One than should check, if the counted mean is the hidden number
  * @method{(void) => void} lower - if the hidden number is greater than current mean, use this method
  * @method{(void) => void} greater - if the hidden number is lower than current mean, use this method
  *
